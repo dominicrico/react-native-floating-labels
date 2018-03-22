@@ -1,5 +1,7 @@
 'use strict';
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
+import createReactClass from 'create-react-class';
 
 import {
   StyleSheet,
@@ -22,7 +24,7 @@ var propTypes = {
   style: View.propTypes.style,
 }
 
-var FloatingLabel  = React.createClass({
+var FloatingLabel  = createReactClass({
   propTypes: propTypes,
 
   getInitialState () {
